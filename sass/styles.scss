@@ -1,0 +1,287 @@
+/**
+ * @file
+ * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
+ *
+ * When you turn on CSS aggregation at admin/config/development/performance, all
+ * of these @include files will be combined into a single file.
+ */
+
+/* Import Sass mixins, variables, Compass modules, etc. */
+@import "compass";
+
+@import "init";
+
+
+
+
+
+/* HTML element (SMACSS base) rules */
+@import "normalize";
+
+/* Layout rules */
+@import "layouts/responsive";
+
+/* Component (SMACSS module) rules */
+@import "components/misc";
+// Optionally, add your own components here.
+@import "print";
+// Na tohle bacha, vede do compu - lokální instalace compassu
+
+
+/* SMACSS theme rules */
+/* @import "theme-A"; */
+/* @import "theme-B"; */
+
+
+body {
+    font-family: $base-font-family;
+    @include background-image(linear-gradient(#fff, $grey));
+	-webkit-box-shadow: inset 0 0 300px rgba(0,0,0,0.5);
+	   -moz-box-shadow: inset 0 0 300px rgba(0,0,0,0.5);
+			box-shadow: inset 0 0 300px rgba(0,0,0,0.5);
+    text-align: justify;
+    hyphens: auto;
+}
+
+#content {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 0;
+}
+
+
+.region {
+    background-color: white;
+    padding: 15px;
+    margin: 10px;
+    border: none;
+    @include border-radius(5px);;
+}
+
+.region-page-top {
+    background: none;
+}
+
+.block {
+    margin-left: none;
+    margin-right: none;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding: 3px;
+    @include border-radius(0px);
+    border-bottom: solid 1px black;
+}
+
+.block.first {
+    margin-top: 5px;
+}
+
+#block-system-main-menu {
+    margin-bottom: 2px;
+}
+
+.block__title {
+    font-size: 1.3em;
+    margin-bottom: none;
+}
+
+// <a> :hover :active :visited :focus
+a {
+    @include link-colors(black, $red, $red, $grey, $red);
+    @include hover-link;
+    text-align: left;
+  }
+
+
+.menu {
+    a {
+    @include link-colors(white, $red, $red, $grey, $red);
+    @include hover-link;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Aldrich', sans-serif;;
+    margin-bottom: 5px;
+    line-height: 130%;
+    text-align: left;
+    
+    a {
+        color: black;
+    }    
+     
+    a:hover {
+        color: $red;
+    }
+        
+    a:focus {
+        color: $red;
+    }
+    
+}
+
+.menu a.active {
+    color: $red;
+}
+    
+
+.menu, ol, ul {
+    padding: 0 0 0 0;
+}
+
+.menu__item {
+    list-style-type: none;
+    display: block;
+    margin-bottom: 5px;
+    margin-left: none;
+    padding: 8px;
+    background: black;
+    color: white;
+    @include border-radius(5px);
+    text-align: left;
+}
+
+#main {
+    padding-top: 1em;
+    position: relative;
+}
+
+
+#header {
+    background-image: url(../images/vrsek1.jpg);
+    background-color: antiquewhite;
+    max-width: inherit;
+    height: 350px;
+}
+
+#navigation {
+    height: 3px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.node {
+    font-family: $base-font-family;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    @include border-radius(10px);
+    @include box-shadow($stin);
+    background-color: white;
+    padding: 20px;
+}
+
+.node__title {
+    font-size: 2em;
+    margin-bottom: none;
+}
+
+.node-sticky {
+    
+}
+
+.node-promoted {
+    
+}
+
+.submitted {
+    font-style: italic;
+    margin-top: none;
+    margin-bottom: 10px;
+    font-size: 0.75em;
+}
+
+li.node-readmore.first {
+    font-style: oblique;
+    color: $red;
+}
+
+li.comment-add.last {
+    font-style: oblique bold;
+    color: $red;
+}
+
+.form-submit {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.form-text {
+  padding: 10px;
+  border: solid 1px #fff;
+  box-shadow: inset 1px 1px 2px 0 #707070;
+  transition: box-shadow 0.3s;
+}
+.form-text:focus,
+.form-text.focus {
+  box-shadow: inset 1px 1px 2px 0 #c9c9c9;
+}
+
+.page__title {
+    margin-top: 10px;
+}
+
+.field-type-image {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-right: 25px;
+    margin-left: none;
+}
+
+.field-items {
+    p {
+        margin-bottom: 5px;
+    }
+}
+
+.item-list,
+.filter-help,
+.filter-guidelines {
+    text-decoration: none;
+    color: $grey;
+        
+    a {
+        color: $grey;
+    }
+    
+    a:hover {
+        color: $red;
+    }
+    
+    a:focus {
+        color: $red;
+    }
+    
+    ul {
+        list-style-type: none;
+        text-align: left;
+
+    }
+    
+    li {
+        margin-bottom: 10px;
+    }
+}
+
+
+#comments {
+    margin-top: 35px;
+}
+.comments {
+    padding: 35px;
+    @include border-radius(5px);
+    border: solid 1px $grey;
+}
+
