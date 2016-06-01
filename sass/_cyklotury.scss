@@ -1,0 +1,645 @@
+body {
+    font-family: $base-font-family;
+    @include background-image(linear-gradient(#fff, $grey));
+	-webkit-box-shadow: inset 0 0 300px rgba(0,0,0,0.5);
+	   -moz-box-shadow: inset 0 0 300px rgba(0,0,0,0.5);
+			box-shadow: inset 0 0 300px rgba(0,0,0,0.5);
+    text-align: justify;
+    hyphens: auto;
+}
+
+p {
+    font-family: $roboto;
+    text-align: left;
+    margin-top: 2px;
+}
+
+
+.pager {
+    background-color: white;
+    @include border-radius(5px);
+}
+
+/*
+ *  * {
+    border: 1px dashed #0000FF;
+} */
+
+
+#page {
+     @include center(1020px);
+}
+
+
+
+.header {
+  position: relative;
+   
+    @include border-radius(5px);
+    background-color: black;
+    max-width: 100%;
+    min-height: 300px;
+    
+    .zahlavi-img {
+        position: relative;
+        top: -25px;
+        right: 35px;
+        @include column(3/5, $offset: 2/5);
+        @include border-radius(5px);
+        @include skew(10deg, 0deg);
+        border-width: medium;
+        border-style: solid;
+        border-color: white;
+        background-image: url("../images/vrsek2.jpg");
+        background-position: center;
+        height: 250px;
+        float: right;
+          @media screen and (max-width: 480px) {
+              @include column(1/1);
+              position: static;
+              margin: 15px 0px 15px 0px;
+          }
+      }
+      
+      .bily-pruh {
+          position: absolute;
+        //  z-index: 1;
+          background-color: white;
+          width: 100%;
+          height: 25px;
+          bottom: 0;
+          left: 0;
+          
+      }
+}
+
+#main {
+    position: relative;
+}
+
+
+.node {
+    font-family: $base-font-family;
+
+    margin-bottom: 10px;
+
+    @include border-radius(10px);
+    @include box-shadow($stin);
+    background-color: white;
+    padding: 20px;
+}
+
+.node__title {
+    font-size: 2em;
+    margin-bottom: none;
+}
+
+
+#content {
+    top: 35px;
+    position: static;
+    padding: 20px;
+    padding-top: 0;
+    
+     
+         .node__title {
+            font-size: 3em;
+          }
+    
+        .node-article {
+           position: relative;
+           padding-left: 20px;
+           padding-right: 20px;
+           padding-bottom: 20px;
+           padding-top: 10px;
+           margin-top: 0px;
+           background-color: white;
+           @include box-shadow($stin);
+           @include border-radius(5px);
+           
+           .node__title {
+            font-size: 3em;
+            }
+            
+        }
+        .node-teaser {
+           position: relative;
+           padding-left: 20px;
+           padding-right: 20px;
+           padding-bottom: 20px;
+           padding-top: 35px;
+           margin-bottom: 15px;
+           background-color: white;
+           @include box-shadow($stin);
+           @include border-radius(5px);
+           
+           .links {
+                clear: both;
+                position: absolute;
+                bottom: 10px;
+                right: 20px;
+                padding-top: 20px;
+                margin-bottom: 0px;
+              
+           }
+           
+           
+           .node__title {
+            font-size: 2em;
+            }
+           
+           
+       
+            }
+            
+            .page__title {
+               display: block;
+               position: relative;
+               min-height: 55px;
+               background-color: white;
+               @include box-shadow($stin);
+               @include border-radius(5px);
+               background-clipping:content-box;
+               overflow: hidden;
+               padding: 0;
+               margin-bottom: 15px;
+               
+               h1 {
+                margin: 0;
+                padding: 20px;
+               }
+               
+               .page-title-pruh {
+                
+                  position: absolute;
+                  height: 12px;
+                  width: 100%;
+                  background-color: red;
+                  bottom: 0;
+                  left: 0;
+                  
+                
+                }
+            
+            }
+}
+
+    
+    // VIEWS
+    
+/* .views-row-first {
+    margin-top: 15px;
+} */
+
+// KONEC VIEWS
+    
+
+// KOMENTARE
+
+/* #comments {
+    margin-top: 35px;
+}
+.comments {
+    padding: 35px;
+    @include border-radius(5px);
+    border: solid 1px $grey;
+} 
+*/
+
+.comment-form {
+    position: static;
+    top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 25px;
+    margin-bottom: 15px;
+    background-color: white;
+    border: 1px solid black;
+    @include border-radius(5px);
+    
+    .form-submit {
+        margin: 15px;
+    }
+    
+    .filter-wrapper {
+        display: none;
+    }
+}
+
+.comment-wrapper {
+    position: static;
+    top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 25px;
+    margin-bottom: 15px;
+    background-color: white;
+    border: 1px solid black;
+    @include border-radius(5px);
+    
+    .title {
+        border: none;
+        margin: none;
+        padding: 15px;
+    }
+    
+    .form-submit {
+        margin: 15px;
+    }
+    
+    .filter-wrapper {
+        display: none;
+    }
+}
+
+.comment-by-node-author {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 1px dotted black;
+    border-bottom: 1px dotted black;
+    padding: 15px;
+    background-color: #e2d8ff;
+    .comment-title {
+        color: white;
+        background-color: black;
+        padding: 7px;
+        @include border-radius(5px);
+        a {
+            @include link-colors(white, $red, $red, $grey, $red);
+            @include hover-link;
+            text-align: left;
+            font-weight: bold;
+          }
+    }
+}
+
+.comment-by-viewer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 1px dotted black;
+    border-bottom: 1px dotted black;
+    padding: 15px;
+    background-color: #e2d8ff;
+    .comment-title {
+        color: white;
+        background-color: black;
+        padding: 7px;
+        @include border-radius(5px);
+        a {
+            @include link-colors(white, $red, $red, $grey, $red);
+            @include hover-link;
+            text-align: left;
+            font-weight: bold;
+          }
+    }
+}
+
+// KONEC KOMENTARU
+
+
+
+.sidebar {
+    position: static;
+    top: 35px;
+    @include box-shadow($stin);
+    @include border-radius(5px);
+    background-color: white;
+    padding-top: 25px;
+    
+    @media screen and (max-width: 480px) {
+        @include column(1/1);
+        position: static;
+    }    
+    
+}
+
+#blok-menu-druhe-menu {
+    text-align: center;
+}
+
+
+// .region {
+//    background-color: white;
+//    padding: 15px;
+//    margin: 10px;
+//    border: none;
+//    @include border-radius(5px);
+// }
+
+
+.more-link {
+  font-weight: bold;  
+}
+
+.field-item {
+    img {
+        object-fit: cover;
+        float: left;
+        //    object-fit: contain;
+        width: 220px;
+        height: auto;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        margin-right: 25px;
+        margin-left: none;
+        @include border-radius(10px);
+        border-style: solid;
+        border-color: black;
+        border-width: 1px;
+        background-clipping:content-box;
+        overflow: hidden;
+        
+        @media screen and (max-width: 480px) {
+        @include column(1/1);
+        position: static;
+        display: block;
+      }
+ 
+    }
+    
+    
+}
+
+
+
+.region-page-top {
+    background-color: none;
+}
+
+// .block {
+//    margin-left: none;
+//    margin-right: none;
+//    margin-top: 30px;
+//    margin-bottom: 15px;
+//    padding: 3px;
+//    @include border-radius(0px);
+//    border-bottom: solid 1px black;
+// }
+
+// .block.first {
+//    margin-top: 5px;
+// }
+
+
+
+#block-system-main-menu {
+    margin-bottom: 2px;
+}
+
+.block__title {
+    font-size: 1.3em;
+    margin-bottom: none;
+}
+
+// <a> :hover :active :visited :focus
+a {
+    @include link-colors(black, $red, $red, $grey, $red);
+    @include hover-link;
+    text-align: left;
+  }
+
+#block-node-recent {
+  .node-title {
+    text-align: left;
+  }
+  .node-author {
+    display: none;
+  }
+}
+
+
+.menu {
+    
+    li {
+        .menu__item {
+            .is-leaf {
+                .leaf {
+                    margin-top: 0px;
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+    
+    a {
+    @include link-colors(white, $red, $red, $grey, $red);
+    @include hover-link;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $raleway;
+    margin-bottom: 5px;
+    line-height: 130%;
+    text-align: left;
+
+    a {
+        color: black;
+    }
+
+    a:hover {
+        color: $red;
+    }
+
+    a:focus {
+        color: $red;
+    }
+
+}
+
+h4 {
+    margin-bottom: 0px;
+}
+
+.menu a.active {
+    color: $red;
+}
+
+
+.menu, ol, ul {
+    padding: 0 0 0 0;
+}
+
+.menu__item {
+    list-style-type: none;
+    display: block;
+    margin-bottom: 5px;
+    margin-left: none;
+    padding: 8px;
+    background: black;
+    color: white;
+    @include border-radius(5px);
+    text-align: left;
+}
+
+
+
+
+
+
+.prouzek {
+  @include column(1/1);
+  @include border-radius(5px);
+  @include skew(-10deg, 0deg);
+  margin-top: 8px;
+  background-color: red;
+  height: 50px;
+}
+
+
+
+
+// logo + slogan
+  
+.logo-kombi {
+    @include column(2/5);
+    position: absolute;
+    top: 75px;
+    left: 35px;
+    @media screen and (max-width: 480px) {
+        @include column(1/1);
+        position: static;
+        margin: 15px 0px 15px 0px;
+    }
+    
+    .header__logo {
+      display: block;
+      max-width: 180px;
+      top: 30px;
+      left: 30px;
+      margin-bottom: 10px;
+      @media screen and (max-width: 480px) {
+        @include column(1/1);
+        position: static;
+      }
+    }
+
+    .bily-slogan {
+     clear: both;
+     display: block;
+     color: white;
+     top: 90px;
+     left: 30px;
+     @media screen and (max-width: 480px) {
+        @include column(1/1);
+        position: static;
+      }
+    }
+
+}
+  
+// logo + slogan --- konec
+
+
+#navigation {
+    @include center(1020px);
+    @include column(3/5, $offset: 1/5);
+    height: 60px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        text-align: center;
+        
+        li {
+            margin: 8px;
+            background: none;
+            
+            a {
+             @include link-colors(black, $red, $red, $grey, $red);
+             @include hover-link;
+            }
+        }
+    }
+    
+    
+
+    @media screen and (max-width: 480px) {
+        @include column(1/1);
+        position: static;
+    }    
+    
+}
+
+#block-menu-menu-druhe-menu {
+  height: 35px;
+  top: 0;
+  width: 100%;
+}
+
+
+
+.node-sticky {
+
+}
+
+.submitted {
+    font-style: italic;
+    margin-top: none;
+    margin-bottom: 10px;
+    font-size: 0.75em;
+}
+
+.form-submit {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.form-text {
+  padding: 10px;
+  border: solid 1px #fff;
+  box-shadow: inset 1px 1px 2px 0 #707070;
+  transition: box-shadow 0.3s;
+}
+.form-text:focus,
+.form-text.focus {
+  box-shadow: inset 1px 1px 2px 0 #c9c9c9;
+}
+
+.item-list,
+.filter-help,
+.filter-guidelines {
+    text-decoration: none;
+    color: $grey;
+
+    a {
+        color: $grey;
+    }
+
+    a:hover {
+        color: $red;
+    }
+
+    a:focus {
+        color: $red;
+    }
+
+    ul {
+        list-style-type: none;
+        text-align: left;
+
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+}
+
+
