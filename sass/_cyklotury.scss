@@ -14,6 +14,13 @@ p {
     margin-top: 2px;
 }
 
+.edit {
+    font-size: 0.6em;
+}
+
+.delete {
+    font-size: 0.6em;
+}
 
 .pager {
     background-color: white;
@@ -140,6 +147,13 @@ p {
                 right: 20px;
                 padding-top: 20px;
                 margin-bottom: 0px;
+                
+                a {
+                  @include link-colors($black, $grey, $black, $black, $black);
+                  @include hover-link;
+                  text-align: left;
+                  font-weight: bold;
+                }
               
            }
            
@@ -174,7 +188,7 @@ p {
                   position: absolute;
                   height: 12px;
                   width: 100%;
-                  background-color: red;
+                  background-color: $red;
                   bottom: 0;
                   left: 0;
                   
@@ -208,14 +222,14 @@ p {
 
 .comment-form {
     position: static;
-    top: 10px;
+    top: 5px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
-    padding-top: 25px;
+    padding-top: 0px;
     margin-bottom: 15px;
     background-color: white;
-    border: 1px solid black;
+ //   border: 1px solid $grey;
     @include border-radius(5px);
     
     .form-submit {
@@ -236,7 +250,7 @@ p {
     padding-top: 25px;
     margin-bottom: 15px;
     background-color: white;
-    border: 1px solid black;
+    border: 1px solid $grey;
     @include border-radius(5px);
     
     .title {
@@ -315,9 +329,9 @@ p {
     
 }
 
-#blok-menu-druhe-menu {
+/* #blok-menu-druhe-menu {
     text-align: center;
-}
+} */
 
 
 // .region {
@@ -329,18 +343,21 @@ p {
 // }
 
 
-.more-link {
-  font-weight: bold;  
-}
+
 
 .field-item {
+    
+    margin-top: 12px;
+    
+    
+    
     img {
         object-fit: cover;
         float: left;
         //    object-fit: contain;
         width: 220px;
         height: auto;
-        margin-top: 12px;
+      //  margin-top: 12px;
         margin-bottom: 12px;
         margin-right: 25px;
         margin-left: none;
@@ -356,12 +373,18 @@ p {
         position: static;
         display: block;
       }
- 
+      
+     
     }
     
     
+
+
+.field-type-image {
+    
 }
 
+}
 
 
 .region-page-top {
@@ -414,14 +437,12 @@ a {
     
     li {
         .menu__item {
-            .is-leaf {
-                .leaf {
                     margin-top: 0px;
                     margin-bottom: 0px;
-                }
-            }
-        }
-    }
+                    }
+       }
+        
+    
     
     a {
     @include link-colors(white, $red, $red, $grey, $red);
@@ -484,7 +505,7 @@ h4 {
   @include border-radius(5px);
   @include skew(-10deg, 0deg);
   margin-top: 8px;
-  background-color: red;
+  background-color: $red;
   height: 50px;
 }
 
@@ -535,7 +556,7 @@ h4 {
 
 #navigation {
     @include center(1020px);
-    @include column(3/5, $offset: 1/5);
+ //   @include column(3/5, $offset: 1/5);
     height: 60px;
     width: 100%;
     top: 0px;

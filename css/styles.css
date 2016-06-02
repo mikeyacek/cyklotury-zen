@@ -1933,11 +1933,11 @@ tr.selected td {
 /* line 1, ../sass/_cyklotury.scss */
 body {
   font-family: "Roboto", sans-serif;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #999999));
-  background-image: -webkit-linear-gradient(#ffffff, #999999);
-  background-image: -moz-linear-gradient(#ffffff, #999999);
-  background-image: -o-linear-gradient(#ffffff, #999999);
-  background-image: linear-gradient(#ffffff, #999999);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #b18b8b));
+  background-image: -webkit-linear-gradient(#ffffff, #b18b8b);
+  background-image: -moz-linear-gradient(#ffffff, #b18b8b);
+  background-image: -o-linear-gradient(#ffffff, #b18b8b);
+  background-image: linear-gradient(#ffffff, #b18b8b);
   -webkit-box-shadow: inset 0 0 300px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: inset 0 0 300px rgba(0, 0, 0, 0.5);
   box-shadow: inset 0 0 300px rgba(0, 0, 0, 0.5);
@@ -1952,7 +1952,17 @@ p {
   margin-top: 2px;
 }
 
-/* line 18, ../sass/_cyklotury.scss */
+/* line 17, ../sass/_cyklotury.scss */
+.edit {
+  font-size: 0.6em;
+}
+
+/* line 21, ../sass/_cyklotury.scss */
+.delete {
+  font-size: 0.6em;
+}
+
+/* line 25, ../sass/_cyklotury.scss */
 .pager {
   background-color: white;
   -webkit-border-radius: 5px;
@@ -1966,7 +1976,7 @@ p {
  *  * {
     border: 1px dashed #0000FF;
 } */
-/* line 29, ../sass/_cyklotury.scss */
+/* line 36, ../sass/_cyklotury.scss */
 #page {
   *zoom: 1;
   width: auto;
@@ -1988,7 +1998,7 @@ p {
   clear: both;
 }
 
-/* line 35, ../sass/_cyklotury.scss */
+/* line 42, ../sass/_cyklotury.scss */
 .header {
   position: relative;
   -webkit-border-radius: 5px;
@@ -2000,7 +2010,7 @@ p {
   max-width: 100%;
   min-height: 300px;
 }
-/* line 43, ../sass/_cyklotury.scss */
+/* line 50, ../sass/_cyklotury.scss */
 .header .zahlavi-img {
   position: relative;
   top: -25px;
@@ -2044,7 +2054,7 @@ p {
   margin-right: 0%;
 }
 @media screen and (max-width: 480px) {
-  /* line 43, ../sass/_cyklotury.scss */
+  /* line 50, ../sass/_cyklotury.scss */
   .header .zahlavi-img {
     *zoom: 1;
     float: left;
@@ -2070,7 +2080,7 @@ p {
     margin-right: 0%;
   }
 }
-/* line 64, ../sass/_cyklotury.scss */
+/* line 71, ../sass/_cyklotury.scss */
 .header .bily-pruh {
   position: absolute;
   background-color: white;
@@ -2080,12 +2090,12 @@ p {
   left: 0;
 }
 
-/* line 76, ../sass/_cyklotury.scss */
+/* line 83, ../sass/_cyklotury.scss */
 #main {
   position: relative;
 }
 
-/* line 81, ../sass/_cyklotury.scss */
+/* line 88, ../sass/_cyklotury.scss */
 .node {
   font-family: "Roboto", sans-serif;
   margin-bottom: 10px;
@@ -2094,31 +2104,31 @@ p {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   border-radius: 10px;
-  -webkit-box-shadow: #999999 5px 5px 2px;
-  -moz-box-shadow: #999999 5px 5px 2px;
-  box-shadow: #999999 5px 5px 2px;
+  -webkit-box-shadow: #b18b8b 5px 5px 2px;
+  -moz-box-shadow: #b18b8b 5px 5px 2px;
+  box-shadow: #b18b8b 5px 5px 2px;
   background-color: white;
   padding: 20px;
 }
 
-/* line 92, ../sass/_cyklotury.scss */
+/* line 99, ../sass/_cyklotury.scss */
 .node__title {
   font-size: 2em;
   margin-bottom: none;
 }
 
-/* line 98, ../sass/_cyklotury.scss */
+/* line 105, ../sass/_cyklotury.scss */
 #content {
   top: 35px;
   position: static;
   padding: 20px;
   padding-top: 0;
 }
-/* line 105, ../sass/_cyklotury.scss */
+/* line 112, ../sass/_cyklotury.scss */
 #content .node__title {
   font-size: 3em;
 }
-/* line 109, ../sass/_cyklotury.scss */
+/* line 116, ../sass/_cyklotury.scss */
 #content .node-article {
   position: relative;
   padding-left: 20px;
@@ -2127,20 +2137,20 @@ p {
   padding-top: 10px;
   margin-top: 0px;
   background-color: white;
-  -webkit-box-shadow: #999999 5px 5px 2px;
-  -moz-box-shadow: #999999 5px 5px 2px;
-  box-shadow: #999999 5px 5px 2px;
+  -webkit-box-shadow: #b18b8b 5px 5px 2px;
+  -moz-box-shadow: #b18b8b 5px 5px 2px;
+  box-shadow: #b18b8b 5px 5px 2px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 120, ../sass/_cyklotury.scss */
+/* line 127, ../sass/_cyklotury.scss */
 #content .node-article .node__title {
   font-size: 3em;
 }
-/* line 125, ../sass/_cyklotury.scss */
+/* line 132, ../sass/_cyklotury.scss */
 #content .node-teaser {
   position: relative;
   padding-left: 20px;
@@ -2149,16 +2159,16 @@ p {
   padding-top: 35px;
   margin-bottom: 15px;
   background-color: white;
-  -webkit-box-shadow: #999999 5px 5px 2px;
-  -moz-box-shadow: #999999 5px 5px 2px;
-  box-shadow: #999999 5px 5px 2px;
+  -webkit-box-shadow: #b18b8b 5px 5px 2px;
+  -moz-box-shadow: #b18b8b 5px 5px 2px;
+  box-shadow: #b18b8b 5px 5px 2px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 136, ../sass/_cyklotury.scss */
+/* line 143, ../sass/_cyklotury.scss */
 #content .node-teaser .links {
   clear: both;
   position: absolute;
@@ -2167,19 +2177,46 @@ p {
   padding-top: 20px;
   margin-bottom: 0px;
 }
-/* line 147, ../sass/_cyklotury.scss */
+/* line 151, ../sass/_cyklotury.scss */
+#content .node-teaser .links a {
+  color: #100404;
+  text-decoration: none;
+  text-align: left;
+  font-weight: bold;
+}
+/* line 18, ../../../../../../../../../.rvm/gems/ruby-2.2.4/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+#content .node-teaser .links a:visited {
+  color: #100404;
+}
+/* line 21, ../../../../../../../../../.rvm/gems/ruby-2.2.4/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+#content .node-teaser .links a:focus {
+  color: #100404;
+}
+/* line 24, ../../../../../../../../../.rvm/gems/ruby-2.2.4/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+#content .node-teaser .links a:hover {
+  color: #b18b8b;
+}
+/* line 27, ../../../../../../../../../.rvm/gems/ruby-2.2.4/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+#content .node-teaser .links a:active {
+  color: #100404;
+}
+/* line 4, ../../../../../../../../../.rvm/gems/ruby-2.2.4/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+#content .node-teaser .links a:hover {
+  text-decoration: underline;
+}
+/* line 161, ../sass/_cyklotury.scss */
 #content .node-teaser .node__title {
   font-size: 2em;
 }
-/* line 155, ../sass/_cyklotury.scss */
+/* line 169, ../sass/_cyklotury.scss */
 #content .page__title {
   display: block;
   position: relative;
   min-height: 55px;
   background-color: white;
-  -webkit-box-shadow: #999999 5px 5px 2px;
-  -moz-box-shadow: #999999 5px 5px 2px;
-  box-shadow: #999999 5px 5px 2px;
+  -webkit-box-shadow: #b18b8b 5px 5px 2px;
+  -moz-box-shadow: #b18b8b 5px 5px 2px;
+  box-shadow: #b18b8b 5px 5px 2px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -2190,17 +2227,17 @@ p {
   padding: 0;
   margin-bottom: 15px;
 }
-/* line 167, ../sass/_cyklotury.scss */
+/* line 181, ../sass/_cyklotury.scss */
 #content .page__title h1 {
   margin: 0;
   padding: 20px;
 }
-/* line 172, ../sass/_cyklotury.scss */
+/* line 186, ../sass/_cyklotury.scss */
 #content .page__title .page-title-pruh {
   position: absolute;
   height: 12px;
   width: 100%;
-  background-color: red;
+  background-color: #e60f14;
   bottom: 0;
   left: 0;
 }
@@ -2217,33 +2254,32 @@ p {
     border: solid 1px $grey;
 } 
 */
-/* line 209, ../sass/_cyklotury.scss */
+/* line 223, ../sass/_cyklotury.scss */
 .comment-form {
   position: static;
-  top: 10px;
+  top: 5px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
-  padding-top: 25px;
+  padding-top: 0px;
   margin-bottom: 15px;
   background-color: white;
-  border: 1px solid black;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 221, ../sass/_cyklotury.scss */
+/* line 235, ../sass/_cyklotury.scss */
 .comment-form .form-submit {
   margin: 15px;
 }
-/* line 225, ../sass/_cyklotury.scss */
+/* line 239, ../sass/_cyklotury.scss */
 .comment-form .filter-wrapper {
   display: none;
 }
 
-/* line 230, ../sass/_cyklotury.scss */
+/* line 244, ../sass/_cyklotury.scss */
 .comment-wrapper {
   position: static;
   top: 10px;
@@ -2253,29 +2289,29 @@ p {
   padding-top: 25px;
   margin-bottom: 15px;
   background-color: white;
-  border: 1px solid black;
+  border: 1px solid #b18b8b;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 242, ../sass/_cyklotury.scss */
+/* line 256, ../sass/_cyklotury.scss */
 .comment-wrapper .title {
   border: none;
   margin: none;
   padding: 15px;
 }
-/* line 248, ../sass/_cyklotury.scss */
+/* line 262, ../sass/_cyklotury.scss */
 .comment-wrapper .form-submit {
   margin: 15px;
 }
-/* line 252, ../sass/_cyklotury.scss */
+/* line 266, ../sass/_cyklotury.scss */
 .comment-wrapper .filter-wrapper {
   display: none;
 }
 
-/* line 257, ../sass/_cyklotury.scss */
+/* line 271, ../sass/_cyklotury.scss */
 .comment-by-node-author {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -2284,7 +2320,7 @@ p {
   padding: 15px;
   background-color: #e2d8ff;
 }
-/* line 264, ../sass/_cyklotury.scss */
+/* line 278, ../sass/_cyklotury.scss */
 .comment-by-node-author .comment-title {
   color: white;
   background-color: black;
@@ -2295,7 +2331,7 @@ p {
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 269, ../sass/_cyklotury.scss */
+/* line 283, ../sass/_cyklotury.scss */
 .comment-by-node-author .comment-title a {
   color: white;
   text-decoration: none;
@@ -2304,26 +2340,26 @@ p {
 }
 /* line 18, ../../../../../../../../../.rvm/gems/ruby-2.2.4/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .comment-by-node-author .comment-title a:visited {
-  color: #999999;
+  color: #b18b8b;
 }
 /* line 21, ../../../../../../../../../.rvm/gems/ruby-2.2.4/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .comment-by-node-author .comment-title a:focus {
-  color: red;
+  color: #e60f14;
 }
 /* line 24, ../../../../../../../../../.rvm/gems/ruby-2.2.4/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .comment-by-node-author .comment-title a:hover {
-  color: red;
+  color: #e60f14;
 }
 /* line 27, ../../../../../../../../../.rvm/gems/ruby-2.2.4/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .comment-by-node-author .comment-title a:active {
-  color: red;
+  color: #e60f14;
 }
 /* line 4, ../../../../../../../../../.rvm/gems/ruby-2.2.4/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
 .comment-by-node-author .comment-title a:hover {
   text-decoration: underline;
 }
 
-/* line 278, ../sass/_cyklotury.scss */
+/* line 292, ../sass/_cyklotury.scss */
 .comment-by-viewer {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -2332,7 +2368,7 @@ p {
   padding: 15px;
   background-color: #e2d8ff;
 }
-/* line 285, ../sass/_cyklotury.scss */
+/* line 299, ../sass/_cyklotury.scss */
 .comment-by-viewer .comment-title {
   color: white;
   background-color: black;
@@ -2343,7 +2379,7 @@ p {
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 290, ../sass/_cyklotury.scss */
+/* line 304, ../sass/_cyklotury.scss */
 .comment-by-viewer .comment-title a {
   color: white;
   text-decoration: none;
@@ -2352,32 +2388,32 @@ p {
 }
 /* line 18, ../../../../../../../../../.rvm/gems/ruby-2.2.4/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .comment-by-viewer .comment-title a:visited {
-  color: #999999;
+  color: #b18b8b;
 }
 /* line 21, ../../../../../../../../../.rvm/gems/ruby-2.2.4/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .comment-by-viewer .comment-title a:focus {
-  color: red;
+  color: #e60f14;
 }
 /* line 24, ../../../../../../../../../.rvm/gems/ruby-2.2.4/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .comment-by-viewer .comment-title a:hover {
-  color: red;
+  color: #e60f14;
 }
 /* line 27, ../../../../../../../../../.rvm/gems/ruby-2.2.4/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .comment-by-viewer .comment-title a:active {
-  color: red;
+  color: #e60f14;
 }
 /* line 4, ../../../../../../../../../.rvm/gems/ruby-2.2.4/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
 .comment-by-viewer .comment-title a:hover {
   text-decoration: underline;
 }
 
-/* line 303, ../sass/_cyklotury.scss */
+/* line 317, ../sass/_cyklotury.scss */
 .sidebar {
   position: static;
   top: 35px;
-  -webkit-box-shadow: #999999 5px 5px 2px;
-  -moz-box-shadow: #999999 5px 5px 2px;
-  box-shadow: #999999 5px 5px 2px;
+  -webkit-box-shadow: #b18b8b 5px 5px 2px;
+  -moz-box-shadow: #b18b8b 5px 5px 2px;
+  box-shadow: #b18b8b 5px 5px 2px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -2387,7 +2423,7 @@ p {
   padding-top: 25px;
 }
 @media screen and (max-width: 480px) {
-  /* line 303, ../sass/_cyklotury.scss */
+  /* line 317, ../sass/_cyklotury.scss */
   .sidebar {
     *zoom: 1;
     float: left;
@@ -2413,23 +2449,19 @@ p {
   }
 }
 
-/* line 318, ../sass/_cyklotury.scss */
-#blok-menu-druhe-menu {
-  text-align: center;
+/* #blok-menu-druhe-menu {
+    text-align: center;
+} */
+/* line 348, ../sass/_cyklotury.scss */
+.field-item {
+  margin-top: 12px;
 }
-
-/* line 332, ../sass/_cyklotury.scss */
-.more-link {
-  font-weight: bold;
-}
-
-/* line 337, ../sass/_cyklotury.scss */
+/* line 354, ../sass/_cyklotury.scss */
 .field-item img {
   object-fit: cover;
   float: left;
   width: 220px;
   height: auto;
-  margin-top: 12px;
   margin-bottom: 12px;
   margin-right: 25px;
   margin-left: none;
@@ -2445,7 +2477,7 @@ p {
   overflow: hidden;
 }
 @media screen and (max-width: 480px) {
-  /* line 337, ../sass/_cyklotury.scss */
+  /* line 354, ../sass/_cyklotury.scss */
   .field-item img {
     *zoom: 1;
     float: left;
@@ -2472,23 +2504,23 @@ p {
   }
 }
 
-/* line 367, ../sass/_cyklotury.scss */
+/* line 390, ../sass/_cyklotury.scss */
 .region-page-top {
   background-color: none;
 }
 
-/* line 387, ../sass/_cyklotury.scss */
+/* line 410, ../sass/_cyklotury.scss */
 #block-system-main-menu {
   margin-bottom: 2px;
 }
 
-/* line 391, ../sass/_cyklotury.scss */
+/* line 414, ../sass/_cyklotury.scss */
 .block__title {
   font-size: 1.3em;
   margin-bottom: none;
 }
 
-/* line 397, ../sass/_cyklotury.scss */
+/* line 420, ../sass/_cyklotury.scss */
 a {
   color: black;
   text-decoration: none;
@@ -2496,101 +2528,101 @@ a {
 }
 /* line 18, ../../../../../../../../../.rvm/gems/ruby-2.2.4/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 a:visited {
-  color: #999999;
+  color: #b18b8b;
 }
 /* line 21, ../../../../../../../../../.rvm/gems/ruby-2.2.4/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 a:focus {
-  color: red;
+  color: #e60f14;
 }
 /* line 24, ../../../../../../../../../.rvm/gems/ruby-2.2.4/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 a:hover {
-  color: red;
+  color: #e60f14;
 }
 /* line 27, ../../../../../../../../../.rvm/gems/ruby-2.2.4/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 a:active {
-  color: red;
+  color: #e60f14;
 }
 /* line 4, ../../../../../../../../../.rvm/gems/ruby-2.2.4/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 404, ../sass/_cyklotury.scss */
+/* line 427, ../sass/_cyklotury.scss */
 #block-node-recent .node-title {
   text-align: left;
 }
-/* line 407, ../sass/_cyklotury.scss */
+/* line 430, ../sass/_cyklotury.scss */
 #block-node-recent .node-author {
   display: none;
 }
 
-/* line 418, ../sass/_cyklotury.scss */
-.menu li .menu__item .is-leaf .leaf {
+/* line 439, ../sass/_cyklotury.scss */
+.menu li .menu__item {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-/* line 426, ../sass/_cyklotury.scss */
+/* line 447, ../sass/_cyklotury.scss */
 .menu a {
   color: white;
   text-decoration: none;
 }
 /* line 18, ../../../../../../../../../.rvm/gems/ruby-2.2.4/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .menu a:visited {
-  color: #999999;
+  color: #b18b8b;
 }
 /* line 21, ../../../../../../../../../.rvm/gems/ruby-2.2.4/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .menu a:focus {
-  color: red;
+  color: #e60f14;
 }
 /* line 24, ../../../../../../../../../.rvm/gems/ruby-2.2.4/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .menu a:hover {
-  color: red;
+  color: #e60f14;
 }
 /* line 27, ../../../../../../../../../.rvm/gems/ruby-2.2.4/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .menu a:active {
-  color: red;
+  color: #e60f14;
 }
 /* line 4, ../../../../../../../../../.rvm/gems/ruby-2.2.4/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
 .menu a:hover {
   text-decoration: underline;
 }
 
-/* line 432, ../sass/_cyklotury.scss */
+/* line 453, ../sass/_cyklotury.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
   margin-bottom: 5px;
   line-height: 130%;
   text-align: left;
 }
-/* line 438, ../sass/_cyklotury.scss */
+/* line 459, ../sass/_cyklotury.scss */
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   color: black;
 }
-/* line 442, ../sass/_cyklotury.scss */
+/* line 463, ../sass/_cyklotury.scss */
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
-  color: red;
+  color: #e60f14;
 }
-/* line 446, ../sass/_cyklotury.scss */
+/* line 467, ../sass/_cyklotury.scss */
 h1 a:focus, h2 a:focus, h3 a:focus, h4 a:focus, h5 a:focus, h6 a:focus {
-  color: red;
+  color: #e60f14;
 }
 
-/* line 452, ../sass/_cyklotury.scss */
+/* line 473, ../sass/_cyklotury.scss */
 h4 {
   margin-bottom: 0px;
 }
 
-/* line 456, ../sass/_cyklotury.scss */
+/* line 477, ../sass/_cyklotury.scss */
 .menu a.active {
-  color: red;
+  color: #e60f14;
 }
 
-/* line 461, ../sass/_cyklotury.scss */
+/* line 482, ../sass/_cyklotury.scss */
 .menu, ol, ul {
   padding: 0 0 0 0;
 }
 
-/* line 465, ../sass/_cyklotury.scss */
+/* line 486, ../sass/_cyklotury.scss */
 .menu__item {
   list-style-type: none;
   display: block;
@@ -2607,7 +2639,7 @@ h4 {
   text-align: left;
 }
 
-/* line 482, ../sass/_cyklotury.scss */
+/* line 503, ../sass/_cyklotury.scss */
 .prouzek {
   *zoom: 1;
   float: left;
@@ -2627,7 +2659,7 @@ h4 {
   -o-transform: skew(-10deg, 0deg);
   transform: skew(-10deg, 0deg);
   margin-top: 8px;
-  background-color: red;
+  background-color: #e60f14;
   height: 50px;
 }
 /* line 344, ../sass/jeet/_grid.scss */
@@ -2644,7 +2676,7 @@ h4 {
   margin-right: 0%;
 }
 
-/* line 496, ../sass/_cyklotury.scss */
+/* line 517, ../sass/_cyklotury.scss */
 .logo-kombi {
   *zoom: 1;
   float: left;
@@ -2671,7 +2703,7 @@ h4 {
   margin-right: 0%;
 }
 @media screen and (max-width: 480px) {
-  /* line 496, ../sass/_cyklotury.scss */
+  /* line 517, ../sass/_cyklotury.scss */
   .logo-kombi {
     *zoom: 1;
     float: left;
@@ -2697,7 +2729,7 @@ h4 {
     margin-right: 0%;
   }
 }
-/* line 507, ../sass/_cyklotury.scss */
+/* line 528, ../sass/_cyklotury.scss */
 .logo-kombi .header__logo {
   display: block;
   max-width: 180px;
@@ -2706,7 +2738,7 @@ h4 {
   margin-bottom: 10px;
 }
 @media screen and (max-width: 480px) {
-  /* line 507, ../sass/_cyklotury.scss */
+  /* line 528, ../sass/_cyklotury.scss */
   .logo-kombi .header__logo {
     *zoom: 1;
     float: left;
@@ -2731,7 +2763,7 @@ h4 {
     margin-right: 0%;
   }
 }
-/* line 519, ../sass/_cyklotury.scss */
+/* line 540, ../sass/_cyklotury.scss */
 .logo-kombi .bily-slogan {
   clear: both;
   display: block;
@@ -2740,7 +2772,7 @@ h4 {
   left: 30px;
 }
 @media screen and (max-width: 480px) {
-  /* line 519, ../sass/_cyklotury.scss */
+  /* line 540, ../sass/_cyklotury.scss */
   .logo-kombi .bily-slogan {
     *zoom: 1;
     float: left;
@@ -2766,7 +2798,7 @@ h4 {
   }
 }
 
-/* line 536, ../sass/_cyklotury.scss */
+/* line 557, ../sass/_cyklotury.scss */
 #navigation {
   *zoom: 1;
   width: auto;
@@ -2777,13 +2809,6 @@ h4 {
   margin-left: auto;
   padding-left: 0;
   padding-right: 0;
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 58.8%;
-  margin-left: 20.6%;
-  margin-right: 3%;
   height: 60px;
   width: 100%;
   top: 0px;
@@ -2798,58 +2823,45 @@ h4 {
 #navigation:after {
   clear: both;
 }
-/* line 344, ../sass/jeet/_grid.scss */
-#navigation:before, #navigation:after {
-  content: '';
-  display: table;
-}
-/* line 349, ../sass/jeet/_grid.scss */
-#navigation:after {
-  clear: both;
-}
-/* line 58, ../sass/jeet/_grid.scss */
-#navigation:last-child {
-  margin-right: 0%;
-}
-/* line 544, ../sass/_cyklotury.scss */
+/* line 565, ../sass/_cyklotury.scss */
 #navigation ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
   text-align: center;
 }
-/* line 550, ../sass/_cyklotury.scss */
+/* line 571, ../sass/_cyklotury.scss */
 #navigation ul li {
   margin: 8px;
   background: none;
 }
-/* line 554, ../sass/_cyklotury.scss */
+/* line 575, ../sass/_cyklotury.scss */
 #navigation ul li a {
   color: black;
   text-decoration: none;
 }
 /* line 18, ../../../../../../../../../.rvm/gems/ruby-2.2.4/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 #navigation ul li a:visited {
-  color: #999999;
+  color: #b18b8b;
 }
 /* line 21, ../../../../../../../../../.rvm/gems/ruby-2.2.4/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 #navigation ul li a:focus {
-  color: red;
+  color: #e60f14;
 }
 /* line 24, ../../../../../../../../../.rvm/gems/ruby-2.2.4/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 #navigation ul li a:hover {
-  color: red;
+  color: #e60f14;
 }
 /* line 27, ../../../../../../../../../.rvm/gems/ruby-2.2.4/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 #navigation ul li a:active {
-  color: red;
+  color: #e60f14;
 }
 /* line 4, ../../../../../../../../../.rvm/gems/ruby-2.2.4/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
 #navigation ul li a:hover {
   text-decoration: underline;
 }
 @media screen and (max-width: 480px) {
-  /* line 536, ../sass/_cyklotury.scss */
+  /* line 557, ../sass/_cyklotury.scss */
   #navigation {
     *zoom: 1;
     float: left;
@@ -2875,14 +2887,14 @@ h4 {
   }
 }
 
-/* line 570, ../sass/_cyklotury.scss */
+/* line 591, ../sass/_cyklotury.scss */
 #block-menu-menu-druhe-menu {
   height: 35px;
   top: 0;
   width: 100%;
 }
 
-/* line 582, ../sass/_cyklotury.scss */
+/* line 603, ../sass/_cyklotury.scss */
 .submitted {
   font-style: italic;
   margin-top: none;
@@ -2890,7 +2902,7 @@ h4 {
   font-size: 0.75em;
 }
 
-/* line 589, ../sass/_cyklotury.scss */
+/* line 610, ../sass/_cyklotury.scss */
 .form-submit {
   background-color: #4CAF50;
   /* Green */
@@ -2908,7 +2920,7 @@ h4 {
   font-size: 16px;
 }
 
-/* line 605, ../sass/_cyklotury.scss */
+/* line 626, ../sass/_cyklotury.scss */
 .form-text {
   padding: 10px;
   border: solid 1px #fff;
@@ -2916,45 +2928,45 @@ h4 {
   transition: box-shadow 0.3s;
 }
 
-/* line 612, ../sass/_cyklotury.scss */
+/* line 633, ../sass/_cyklotury.scss */
 .form-text:focus,
 .form-text.focus {
   box-shadow: inset 1px 1px 2px 0 #c9c9c9;
 }
 
-/* line 618, ../sass/_cyklotury.scss */
+/* line 639, ../sass/_cyklotury.scss */
 .item-list,
 .filter-help,
 .filter-guidelines {
   text-decoration: none;
-  color: #999999;
+  color: #b18b8b;
 }
-/* line 622, ../sass/_cyklotury.scss */
+/* line 643, ../sass/_cyklotury.scss */
 .item-list a,
 .filter-help a,
 .filter-guidelines a {
-  color: #999999;
+  color: #b18b8b;
 }
-/* line 626, ../sass/_cyklotury.scss */
+/* line 647, ../sass/_cyklotury.scss */
 .item-list a:hover,
 .filter-help a:hover,
 .filter-guidelines a:hover {
-  color: red;
+  color: #e60f14;
 }
-/* line 630, ../sass/_cyklotury.scss */
+/* line 651, ../sass/_cyklotury.scss */
 .item-list a:focus,
 .filter-help a:focus,
 .filter-guidelines a:focus {
-  color: red;
+  color: #e60f14;
 }
-/* line 634, ../sass/_cyklotury.scss */
+/* line 655, ../sass/_cyklotury.scss */
 .item-list ul,
 .filter-help ul,
 .filter-guidelines ul {
   list-style-type: none;
   text-align: left;
 }
-/* line 640, ../sass/_cyklotury.scss */
+/* line 661, ../sass/_cyklotury.scss */
 .item-list li,
 .filter-help li,
 .filter-guidelines li {
